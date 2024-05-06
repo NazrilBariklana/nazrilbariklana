@@ -1,36 +1,36 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>login nazril</title>
+        <title>Login nazril</title>
         <link rel="stylesheet" href="stool.css">
     </head>
    
     <body>
         <div class="container">
-          <h1>NAZRIL LOGIN</h1>
+            <h1>NAZRIL LOGIN</h1>
             <form>
                 <label>Username</label><br>
                 <input type="text" name="username" id="username" /><br>
                 <label>Password</label><br>
                 <input type="password" name="password" id="password" /><br><br>
-                 <button>Log in</button>
+                <button type="button" onclick="login()">Log in</button>
             </form>
         </div> 
         <script>
-    function Log in() {
-        // Get the input values
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
+            function login() {
+                // Get the input values
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
 
-// Check if the input values match the expeted values 
-if (username = "admin" & password = "123") {
-    // Redirect to the next page
-    window.location.href = "HOME.html";
-} else {
-    // Redirect an error message
-    alert("invalid username or password");
-}
-</script>
-     
+                // Check if the input values match the expected values 
+                if (username === "admin" && password === "123") {
+                    // Redirect to the next page
+                    window.location.href = "HOME.html";
+                } else {
+                    // Redirect an error message
+                    alert("Invalid username or password");
+                }
+            }
+        </script>
     </body>
 </html>
