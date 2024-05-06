@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 16;
+    padding: 0;
+    overflow: hidden;
+    background-color: #175873;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 196px;
+    text-decoration: none;
+    style="font-size:50px;">I am big
+
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #c85250;
+    transition: all 0.3s ease;
+}

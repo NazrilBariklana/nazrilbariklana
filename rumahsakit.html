@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>login nazril</title>
+        <link rel="stylesheet" href="stool.css">
+    </head>
+   
+    <body>
+        <div class="container"><!DOCTYPE HTML>
+<html>
+    <head>
+        <title>login nazril</title>
+        <link rel="stylesheet" href="stool.css">
+    </head>
+   
+    <body>
+        <div class="container">
+              <h1>FORMULIR PENDAFTARAN PASIEN RUMAH SAKIT VIBE</h1>
+            <form>
+                <label>NAMA LENGKAP</label><br>
+                <input type="text" name="nama" id="nama" /><br>
+                <label>USIA</label><br>
+                <input type="number" name="usia" id="usia" /><br><br>
+                 <label>POLI</label><br>
+                 <select name="poli" id="poli">
+                <option value="THT">THT</option>
+                <option value="UMUM">UMUM</option>
+                <option value="SPESIALIS JANTUNG">SPESIALIS JANTUNG</option>
+                <option value="SPESIALIS PARU PARU">SPESIALIS PARU PARU</option>
+                 <option value="GIGI">GIGI</option>
+                  <option value="BEDAH">BEDAH</option>
+                   <option value="SARAF">SARAF</option>
+                    <option value="PENYAKIT DALAM">PENYAKIT DALAM</option>
+            <input type="gs" name="gs" id="gs" /><br><br>
+                <label>TANGGAL PERIKSA:</label>
+            <input type="date" name="tanggal" id="tanggal" />
+                 <button><input type="submit" name="submit" value="daftar"onclick="daftar()" /></button>
+            </form>
+        </div> 
+        <script>
+     function daftar() {
+
+var nama = document.getElementById("nama").value;
+var usia = document.getElementById("usia").value;
+var poli = document.getElementById("poli").value;
+var tanggal = document.getElementById("tanggal").value;
+ document.write("<h1> SELAMAT { "+nama+"  } PENDAFTARAN ANDA BERHASIL </h1>");
+document.write("<h2> KAMI TUNGGU ANDA DI RUMAH SAKIT VIBE KAMI  </h2>");
+document.write("<p>_______________________________________________________________________________________________________________________________________________________</p>");
+ document.write("<p>NAMA LENGKAP : "+nama+"</p>");
+ document.write("<p>USIA : "+usia+"</p>");
+ document.write("<p>POLI : "+poli+" - oleh {Dr. Mamat S.K.H}</p>");
+ document.write("<p>TANGGAL PERIKSA : "+tanggal+"</p>");
+  document.write("<h2>NOMOR ANTRIAN : 015 </h2>");
+  document.write("<h2>~ Hormat Kami Rumah Sakit Vibe Jl. krikil krikil kecil no.34, Banyuwangi ~</h2>");
+ }
+</script>
+</body> 
+</html>

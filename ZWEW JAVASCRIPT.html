@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Form Javascript Nazril</title>
+<link rel="stylesheet" type="text/css" href="UI ALA ALA.css">
+</head>
+<body>
+    <div style="background-color: darkslateblue;">
+         <br style="color:lightyellow;">
+      <h1 style="text-align:center;"><p style="color:lightyellow;">Welcome to My Javascript</p> </h1>
+       <br style="color:lightyellow;">
+     </div>
+<br>
+<p>
+
+	  <script>
+        console.log("Saya belajar Javascript");
+        document.write("HALLO! Nazril Bariklana");
+        document.write("<hr>");
+        document.write("<p>Ini Adalah Web Saya Untuk Javascript study</p>");
+        document.write(" <b>TO THE LOGIN</b>")
+    </script>
+    <button  onclick="alert('KOMPUTER INI MELEDAK DALAM 30 DETIK!!!')">Klik aku!></button>
+ <p>
+
+
+ 	 <p>
+
+ <form>
+        <fieldset>
+        <legend>NAZRIL LOGIN</legend>
+        <p>
+            <label>USERNAME:</label>
+            <input type="text" name="username" placeholder="input..." id="username" />
+        </p>
+        <p>
+            <label>KELAS:</label>
+         <select name="kelas" id="kelas">
+                <option value="XI KEDOKTERAN 1">XI KEDOKTERAN 1</option>
+                <option value="XI KEDOKTERAN 2">XI KEDOKTERAN 2</option>
+                <option value="XI KEDOKTERAN 3">XI KEDOKTERAN 3</option>
+                <option value="XI TEKNIK 4">XI TEKNIK 4</option>
+                <option value="XI TEKNIK 5">XI TEKNIK 5</option>
+                <option value="XI SAINS 6">XI SAINS 6</option>
+                <option value="XI SOSHUM 7">XI SOSHUM 7</option>
+                <option value="XI SOSHUM 8">XI SOSHUM 8</option>
+                <option value="XI SOSHUM 9">XI SOSHUM 9</option>
+            </select>
+        </p>
+        <p>
+            <label>WHATSAPP:</label>
+            <input type="number" name="number" placeholder="masukan nomer" id="number" />
+        </p>
+        <p>
+        	<label>Agama:</label>
+        	  <select name="agama" id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+            </p>
+             <p>
+            <label>Tanggal Lahir:</label>
+            <input type="date" name="tanggal" id="tanggal" />
+        </p>
+           <p>
+            <label>Kabupaten/Kota:</label>
+            <input type="text" name="KabupatenKota" placeholder="input..." id="KabupatenKota" />
+        </p>
+            <label><input type="checkbox" name="remember" value="remember" /> Apakah Data Sudah Valid</label>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="tampilkanhasil" onclick="tampilkanhasil()" />
+        </p>
+        </fieldset>
+    </form>
+<script>
+    function tampilkanhasil() {
+var username = document.getElementById("username").value;
+var kelas = document.getElementById("kelas").value;
+var number = document.getElementById("number").value;
+var tanggal = document.getElementById("tanggal").value;
+var KabupatenKota = document.getElementById("KabupatenKota").value;
+var agama = document.getElementById("agama").value;
+
+ document.write("<h1> KONFRIM DATA </h1>");
+ document.write("<p>USERNAME : "+username+"</p>");
+ document.write("<p>KELAS : "+kelas+"</p>");
+ document.write("<p>WHATSAPP : "+number+"</p>");
+ document.write("<p>TANGGAL LAHIR : "+KabupatenKota+" , "+tanggal+"</p>");
+ document.write("<p>AGAMA : "+agama+"</p>");
+ }
+</script>
+</body> 
+</html>
+ 
