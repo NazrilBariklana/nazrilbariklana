@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Login</title>
+</head>
+<body>
+    <form id="hasil">
+    
+        <legend>RUMUS MATEMATIKA</legend>
+        <p>
+            <label>PANJANG AB:</label>
+            <input type="number" name="username" placeholder="masukan angka" id="panjang" />
+        </p>
+        <p>
+            <label>PANJANG CD:</label>
+            <input type="number" name="username" placeholder="masukan angka" id="punjung"/>
+        </p>
+       
+
+      <button onclick="hitung()">Hitung</button>
+        
+        <p id="hasil"></p>
+
+    </form>
+
+        <script>
+     function hitung() {
+const panjang = document.getElementById('panjang').value
+const punjung = document.getElementById('punjung').value
+hasilAwal = panjang * punjung
+hasil = hasilAwal / 2
+const tampilkanHasil = document.getElementById('hasil').innerHTML= hasil
+}
+</script>
+ <a href="panjang.html"> Kembali</a>
+</body>
+</html>
